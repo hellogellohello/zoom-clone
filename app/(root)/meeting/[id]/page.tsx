@@ -10,7 +10,7 @@ import MeetingRoom from '@/components/MeetingRoom';
 
 const MeetingPage = () => {
   const { id } = useParams();
-  const { call, isCallLoading } = useGetCallById(id);
+  const { call } = useGetCallById(id);
   const [isSetupComplete, setIsSetupComplete] = useState(false);
 
   // if (!isLoaded || isCallLoading) return <Loader />;
